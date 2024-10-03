@@ -1,33 +1,328 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/colors.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="aside">
-        <div class="logo">
-          <a href="#"><span>A</span>tlas</a>
-        </div>
-        <ul class="nav">
-          <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-          <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-          <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-          <li><a href="#"><i class="fa fa-briefcase"></i>Portafolio</a></li>
-          <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/colors.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="aside">
+      <div class="logo">
+        <a href="#"><span>A</span>tlas</a>
       </div>
+      <div class="nav-toggler">
+        <span></span>
+      </div>
+      <ul class="nav">
+        <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
+        <li><a href="#"><i class="fa fa-briefcase"></i>Portafolio</a></li>
+        <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+      </ul>
+    </div>
 
     <div class="main-content">
-      <section class="home section">Home</section>
+      <section class="home section">
+        <div class="container">
+          <div class="row">
+            <div class="home-info p-15">
+              <h3 class="hello">
+                Hello, my name is
+                <span class="name">Pedro</span>
+              </h3>
+              <h3 class="my-profession">
+                I'm a
+                <span class="typing">Frontend Developer</span>
+              </h3>
+              <p>
+                i'm a Frontend Developer, i love to code and i'm passionate about the web.
+              </p>
+              <a href="#contact" class="btn hire-me">Contact Me</a>
+            </div>
+            <div class="home-img p-15">
+              <img
+                src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/the-office-poster-michael-scott.jpg"
+                alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title p-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content p-15">
+              <div class="row">
+                <div class="about-text p-15">
+                  <h3>i'm a <span>Frontend Developer</span>, i love to code and i'm passionate about the web.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget ultricies ultrices,
+                    nunc nisi aliquet nisi, eu tincidunt nisl nisl eu nisi. Donec euismod, nisl eget ultricies ultrices,
+                    nunc nisi aliquet nisi, eu tincidunt nisl nisl eu nisi. Donec euismod, nisl eget ultricies ultrices,
+                    nunc nisi aliquet nisi, eu tincidunt nisl nisl eu nisi. Donec euismod, nisl eget ultricies ultrices,
+                    nunc nisi aliquet nisi, eu tincidunt nisl nisl eu nisi.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info p-15">
+                  <div class="row">
+                    <div class="info-item">
+                      <p>
+                        Birthday:<span>10 February 1998</span>
+                      </p>
+                    </div>
+                    <div class="info-item">
+                      <p>
+                        Sge: <span>25</span>
+                      </p>
+                    </div>
+                    <div class="info-item">
+                      <p>website: <span>www.otmars.com</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Email: <span>otmars@gmail.com</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Github: <span>https://github.com/otmars</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>city: <span>Barcelona</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Freelance: <span>Avaliable</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons p-15">
+                      <a href="#" class="btn">Download CV</a>
+                      <a href="#contact" class="btn">Contact Me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills p-15">
+                  <div class="row">
+                    <div class="skill-item p-15">
+                      <h5>css</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 66%;"></div>
+                        <div class="skill-percent">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item p-15">
+                      <h5>css</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 66%;"></div>
+                        <div class="skill-percent">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill-item p-15">
+                      <h5>css</h5>
+                      <div class="progress">
+                        <div class="progress-in" style="width: 66%;"></div>
+                        <div class="skill-percent">66%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education p-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box p-15">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>
+                            2023 -2024
+                          </h3>
+                          <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos obcaecati
+                            incidunt nemo sint
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>
+                            2023 -2024
+                          </h3>
+                          <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos obcaecati
+                            incidunt nemo sint
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience p-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row"></div>
+                  <div class="timeline-box p-15">
+                    <div class="timeline shadow-dark">
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-date">
+                          <i class="fa fa-calendar"></i>
+                          2023 -2024
+                        </h3>
+                        <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                        <p class="timeline-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos obcaecati
+                          incidunt nemo sint
+                        </p>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="circle-dot"></div>
+                        <h3 class="timeline-date">
+                          <i class="fa fa-calendar"></i>
+                          2023 -2024
+                        </h3>
+                        <h4 class="timeline-title">Bachelor of Science in Computer Science</h4>
+                        <p class="timeline-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dignissimos obcaecati
+                          incidunt nemo sint
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <section class="service section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title p-15">
+              <h2>Services</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end --><!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end --><!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end --><!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end --><!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end --><!-- service item-->
+            <div class="service-item p-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-mobile-alt"></i>
+                </div>
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <!-- service item end -->
+          </div>
+        </div>
+      </section>
+      <section class="portafolio section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title p-15">
+              <h2>Portafolio </h2>
+            </div>
+            <div class="row">
+              <div class="portafolio-heading p-15">
+                <h2>My last Projects:</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- portafolio item -->
+              <div class="portafolio-item p-15">
+                <div class="portafolio-item-inner shadow-dark">
+                  <div class="portafolio-img">
+                    <img
+                      src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/the-office-poster-michael-scott.jpg"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact section">
+        <div class="container">
+          <div class="row">
+            <div class="section-title p-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
