@@ -22,16 +22,15 @@
         <span></span>
       </div>
       <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i>Portafolio</a></li>
-        <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Inicio</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i>Acerca de mi</a></li>
+        <li><a href="#services"><i class="fa fa-list"></i>Servicios</a></li>
+        <li><a href="#portafolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
+        <li><a href="#contact"><i class="fa fa-comments"></i>Contacto</a></li>
       </ul>
     </div>
-
     <div class="main-content">
-      <section class="home section">
+      <section class="home section" id="home">
         <div class="container">
           <div class="row">
             <div class="home-info p-15">
@@ -411,12 +410,11 @@
     </div>
     <h4>Theme Colors</h4>
     <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('--skin-color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('--skin-color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('--skin-color-3')"></span>
-    </div>
+      <span class="color-1" data-color="--skin-color-1"></span>
+      <span class="color-2" data-color="--skin-color-2"></span>
+      <span class="color-3" data-color="--skin-color-3"></span>    </div>
   </div> <button id="toggleColor">Intercambiar color</button>
-  <script src="/src/main.ts"></script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 
 </html>

@@ -8,6 +8,9 @@
   --text-black-700: #504e70;
   --skin-color: #ec1839;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body.dark {
   --bg-back-900: #1e1e2e;
