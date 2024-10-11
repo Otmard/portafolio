@@ -8,7 +8,8 @@
   --text-black-700: #504e70;
   --skin-color: #ec1839;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -19,6 +20,7 @@ body.dark {
   --text-black-900: #f2f2fc;
   --text-black-700: #e8dfec;
 }
+
 body {
   line-height: 1.5;
   font-size: 16px;
@@ -170,6 +172,10 @@ ul {
   text-transform: capitalize;
 }
 
+.aside .logo img {
+  width: 100px;
+}
+
 .aside .logo a {
   color: var(--text-black-700);
   font-weight: 700;
@@ -298,7 +304,7 @@ h3.hello {
 
 h3.hello span {
   font-family: 'Clicker Script', cursive;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--skin-color);
 
@@ -326,6 +332,11 @@ h3.my-profession {
   text-align: center;
   position: relative;
   /* background: red; */
+  /* width: 100%; */
+}
+
+.info-item p span a {
+  color: var(--text-black-700);
 }
 
 .home .home-img::after {
@@ -421,11 +432,14 @@ h3.my-profession {
   display: inline-block;
 }
 
-.about .about-content .personal-info .buttons {
+.buttons {
+  width: 100%;
+  text-align: right;
   margin-top: 30px;
+  margin-bottom: 60px;
 }
 
-.about .about-content .personal-info .buttons .btn {
+.buttons .btn {
   margin-right: 15px;
   margin-top: 10px;
 }
@@ -510,6 +524,7 @@ h3.my-profession {
   position: relative;
   padding-left: 37px;
   padding-bottom: 50px;
+  padding-right: 15px;
 }
 
 .about .about-content .timeline-box .timeline-item:last-child {
@@ -567,6 +582,7 @@ h3.my-profession {
   margin-bottom: 30px;
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  
 }
 
 .service .service-item .service-item-inner {
@@ -576,6 +592,7 @@ h3.my-profession {
   padding: 30px 15px;
   text-align: center;
   transition: all 0.3s ease;
+  min-height: 420px;
 }
 
 .service .service-item .service-item-inner:hover {
@@ -881,4 +898,32 @@ h3.my-profession {
 
 .style-switcher .color-3 {
   background: #2caf1a;
+}
+
+.languages {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* min-height: 500px; */
+  /* background-color: red; */
+  padding: 40px;
+}
+
+.languages img {
+  width: 100%;
+  /* La imagen ocupará el 100% del ancho del contenedor */
+  height: auto;
+  /* Mantendrá la proporción original de la imagen */
+  display: block;
+  max-width: 100%;
+}
+.timeline-box .timeline-item ul{
+  list-style-type: initial
+}
+.timeline-box .timeline-item ul li::marker {
+  color: var(--text-black-900); /* Cambia el color del marcador (círculo) */
 }

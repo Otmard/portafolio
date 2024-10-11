@@ -1,0 +1,95 @@
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-code"></i>
+    </div>
+    <h4>Desarrollo de Software</h4>
+    <p>Creación de aplicaciones personalizadas y eficientes adaptadas a las necesidades específicas de los clientes, utilizando las últimas tecnologías y metodologías de desarrollo.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-globe"></i>
+    </div>
+    <h4>Diseño de Páginas Web</h4>
+    <p>Diseño y desarrollo de sitios web atractivos y funcionales, optimizados para dispositivos móviles, que mejoran la experiencia del usuario y reflejan la identidad de la marca.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-paint-brush"></i>
+    </div>
+    <h4>Diseño Gráfico</h4>
+    <p>Creación de elementos visuales impactantes, como logotipos, folletos y material de marketing, que comunican de manera efectiva el mensaje de la marca.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-mobile-alt"></i>
+    </div>
+    <h4>Desarrollo de Aplicaciones Móviles</h4>
+    <p>Diseño y desarrollo de aplicaciones móviles para iOS y Android, enfocadas en la usabilidad y el rendimiento, que ayudan a las empresas a llegar a un público más amplio.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-cogs"></i>
+    </div>
+    <h4>Consultoría en Tecnología</h4>
+    <p>Asesoramiento sobre la implementación de soluciones tecnológicas adecuadas, optimización de procesos y selección de herramientas que impulsan el crecimiento y la eficiencia empresarial.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-tools"></i>
+    </div>
+    <h4>Mantenimiento y Soporte Técnico</h4>
+    <p>Servicios de mantenimiento continuo y soporte técnico para garantizar el funcionamiento óptimo de sistemas y aplicaciones, así como la resolución de problemas de hardware y software.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-search"></i>
+    </div>
+    <h4>SEO y Marketing Digital</h4>
+    <p>Estrategias de optimización para motores de búsqueda (SEO) y campañas de marketing digital para aumentar la visibilidad en línea y atraer más clientes potenciales.</p>
+  </div>
+</div>
+<!-- service item end -->
+
+<!-- service item-->
+<div class="service-item p-15">
+  <div class="service-item-inner">
+    <div class="icon">
+      <i class="fa fa-shopping-cart"></i>
+    </div>
+    <h4>Soluciones de E-commerce</h4>
+    <p>Desarrollo de tiendas en línea personalizadas, integrando soluciones de pago y gestión de inventario, para ayudar a las empresas a expandir sus ventas en el entorno digital.</p>
+  </div>
+</div>
+<!-- service item end -->
