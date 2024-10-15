@@ -6,7 +6,7 @@
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
-  --skin-color: #ec1839;
+  --skin-color: #2caf1a;
 }
 
 html {
@@ -360,7 +360,6 @@ h3.my-profession {
   border-left: 10px solid var(--skin-color);
   left: 20px;
   top: -40px;
-
 }
 
 .home .home-img img {
@@ -398,8 +397,8 @@ h3.my-profession {
 }
 
 .about .about-content .personal-info {
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 80%;
+  max-width: 80%;
   margin-top: 40px;
 }
 
@@ -490,8 +489,8 @@ h3.my-profession {
 
 .about .about-content .education,
 .about .about-content .experience {
-  flex: 0 0 50%;
-  max-width: 50%;
+  flex: 0 0 100%;
+  max-width: 100%;
   margin-top: 30px;
 }
 
@@ -683,6 +682,7 @@ h3.my-profession {
   text-align: center;
   font-size: 25px;
   margin-bottom: 20px;
+  margin-top: 20px;
   display: block;
 }
 
@@ -694,8 +694,8 @@ h3.my-profession {
 }
 
 .contact .contact-info-item {
-  flex: 0 0 25%;
-  max-width: 25%;
+  flex: 0 0 33%;
+  max-width: 33%;
   text-align: center;
 }
 

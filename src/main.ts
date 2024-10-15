@@ -1,4 +1,5 @@
 import Typed from 'typed.js';
+import { ScrollReveal } from "../src/scrollreveal.min";
 
 const typed = new Typed('.typing', {
     strings: ['<i>Software Developer</i>', '<i>Web Developer</i>', '<i>UI/UX Designer</i>'],
@@ -10,12 +11,39 @@ const typed = new Typed('.typing', {
 
 });
 typed.start();
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 1500,
+    delay: 200,
+    reset: true
+});
+
+sr.reveal('.container,.experience, .education');
+
+sr.reveal('.nav, .logo', { origin: "left", reset: false })
+
+sr.reveal('.home-img', { origin: "rigth" })
+
+sr.reveal('.languages, .service-item, .portafolio-item', {
+    rotate: {
+        // x: 20,
+        y:50,
+        // z: 20
+    },
+    interval: 250,
+})
+
+
+
+
 const link = document.querySelectorAll('.nav li a');
 link.forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
         const target = link.getAttribute('href');
-        const targetSection  = document.querySelector(target);
+        const targetSection = document.querySelector(target);
 
         const scrollTo = (target) => {
             const top = target.getBoundingClientRect().top + window.scrollY;
@@ -84,3 +112,23 @@ window.addEventListener('load', () => {
 }
 
 )
+
+function sendEmail(event) {
+    event.preventDefault(); // Evitar el envío normal del formulario
+
+    // Obtener los valores del formulario
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+
+    // Crear el enlace mailto
+    const mailtoLink = `mailto:ootmar1998@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Hello Otmar,\n\nYou have a new message from ${name}.\n\nHere are the details:\n\nName: ${name}\nEmail: ${email}\nMessage:\n${message}\n\nBest regards!`)}`
+
+    // Abrir el cliente de correo electrónico
+    window.location.href = mailtoLink;
+}
+
+// Añadir el listener para el formulario
+document.getElementById('contactForm').addEventListener('submit', sendEmail);
