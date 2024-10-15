@@ -29,7 +29,7 @@ sr.reveal('.home-img', { origin: "rigth" })
 sr.reveal('.languages, .service-item, .portafolio-item', {
     rotate: {
         // x: 20,
-        y:50,
+        y: 50,
         // z: 20
     },
     interval: 250,
@@ -96,16 +96,24 @@ function setActiveStyle(color: string) {
             break;
     }
 }
+const logo = document.getElementById('logo') as HTMLImageElement
 const dayNight = document.querySelector('.day-nigth')
 dayNight.addEventListener('click', () => {
+    console.log(logo.src);
+
     dayNight.querySelector('i').classList.toggle('fa-moon')
     dayNight.querySelector('i').classList.toggle('fa-sun')
     document.body.classList.toggle('dark')
+    if (document.body.classList.contains('dark')) {
+        logo.src = '/assets/images/logo-dark.svg'
+    } else {
+        logo.src = '/assets/images/logo.svg'
+
+    }
 })
 window.addEventListener('load', () => {
     if (document.body.classList.contains('dark')) {
         dayNight.querySelector('i').classList.add('fa-sun')
-
     } else {
         dayNight.querySelector('i').classList.add('fa-moon')
     }
