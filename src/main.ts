@@ -98,17 +98,21 @@ function setActiveStyle(color: string) {
 }
 const logo = document.getElementById('logo') as HTMLImageElement
 const dayNight = document.querySelector('.day-nigth')
+const header = document.getElementById('header') as HTMLElement
+
 dayNight.addEventListener('click', () => {
     console.log(logo.src);
 
     dayNight.querySelector('i').classList.toggle('fa-moon')
     dayNight.querySelector('i').classList.toggle('fa-sun')
     document.body.classList.toggle('dark')
+
     if (document.body.classList.contains('dark')) {
         logo.src = '/assets/images/logo-dark.svg'
+        header.style.backgroundImage = 'radial-gradient(ellipse 80% 80% at 50% -20%,rgba(0,153,255,.25),hsla(0,0%,100%,0))'
     } else {
         logo.src = '/assets/images/logo.svg'
-
+        header.style.backgroundImage = 'radial-gradient(ellipse 80% 80% at 60% -20%,rgb(222, 222, 232),hsla(0,0%,100%,0))'
     }
 })
 window.addEventListener('load', () => {
