@@ -121,6 +121,9 @@ dayNight.addEventListener("click", () => {
 window.addEventListener("load", () => {
 	if (document.body.classList.contains("dark")) {
 		dayNight.querySelector("i").classList.add("fa-sun");
+		logo.src = "/assets/images/logo-dark.svg";
+		header.style.backgroundImage =
+			"radial-gradient(ellipse 80% 80% at 50% -20%,rgba(0,153,255,.25),hsla(0,0%,100%,0))";
 	} else {
 		dayNight.querySelector("i").classList.add("fa-moon");
 	}
